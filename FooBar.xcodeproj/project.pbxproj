@@ -12,6 +12,8 @@
 		DC09C6851AB212FD00F87DA7 /* FooBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09C6841AB212FD00F87DA7 /* FooBarTests.m */; };
 		DC09C6901AB2131600F87DA7 /* FooBarObject.h in Headers */ = {isa = PBXBuildFile; fileRef = DC09C68E1AB2131600F87DA7 /* FooBarObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC09C6911AB2131600F87DA7 /* FooBarObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09C68F1AB2131600F87DA7 /* FooBarObject.m */; };
+		DCBA26D11AB367BC00A20B88 /* Bar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBA26D01AB367BC00A20B88 /* Bar.framework */; };
+		DCBA26D31AB367C100A20B88 /* Foo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBA26D21AB367C100A20B88 /* Foo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		DC09C6841AB212FD00F87DA7 /* FooBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FooBarTests.m; sourceTree = "<group>"; };
 		DC09C68E1AB2131600F87DA7 /* FooBarObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooBarObject.h; sourceTree = "<group>"; };
 		DC09C68F1AB2131600F87DA7 /* FooBarObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooBarObject.m; sourceTree = "<group>"; };
+		DCBA26D01AB367BC00A20B88 /* Bar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bar.framework; path = "../../../../../../../../Documents/Projects/Comcast/FrameworkTesting/AcmeDev/Bar/build/Release-iphoneos/Bar.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBA26D21AB367C100A20B88 /* Foo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foo.framework; path = "../../../../../../../../Documents/Projects/Comcast/FrameworkTesting/AcmeDev/Foo/build/Release-iphoneos/Foo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCBA26D31AB367C100A20B88 /* Foo.framework in Frameworks */,
+				DCBA26D11AB367BC00A20B88 /* Bar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,7 @@
 				DC09C6741AB212FD00F87DA7 /* FooBar */,
 				DC09C6811AB212FD00F87DA7 /* FooBarTests */,
 				DC09C6731AB212FD00F87DA7 /* Products */,
+				DCBA26D41AB367DC00A20B88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +113,15 @@
 				DC09C6831AB212FD00F87DA7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCBA26D41AB367DC00A20B88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCBA26D21AB367C100A20B88 /* Foo.framework */,
+				DCBA26D01AB367BC00A20B88 /* Bar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +346,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FooBar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -345,6 +362,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FooBar/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +420,7 @@
 				DC09C68A1AB212FD00F87DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC09C68B1AB212FD00F87DA7 /* Build configuration list for PBXNativeTarget "FooBarTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +429,7 @@
 				DC09C68D1AB212FD00F87DA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
